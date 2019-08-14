@@ -16,7 +16,7 @@ end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
 letter = text.scan(/\w/)[0]
-if letter == letter.uppercase && (text.scan(/\./))
+if (letter == letter.uppercase) && (text.scan(/\./))
   true
 else
   false
